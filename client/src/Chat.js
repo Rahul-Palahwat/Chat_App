@@ -65,7 +65,15 @@ function Chat({ socket, username, room }) {
         </ScrollToBottom>
       </div>
       <div className="chat-footer">
+        <div className="symbol">&#914;</div>
+        <div className="symbol" style={{"borderRight":"0.1px solid grey","paddingRight":"1rem"}}>&#73;</div>
+        <div className="symbol">&#128625;</div>
+        <div className="symbol">&#128625;</div>
+        <div className="symbol" style={{"color":"white","backgroundColor":"black"}}>&#x1F650;</div>
+      </div>
+      <div className="chat-footer">
         <input
+          className="chatinput"
           type="text"
           value={currentMessage}
           placeholder="Hey..."
@@ -78,10 +86,11 @@ function Chat({ socket, username, room }) {
         />
         <button onClick={sendMessage}>&#9658;</button>
       </div>
-      <div>
-        <button className="bold">Bold</button>
-        <button className="bold">Italic</button>
-        <button className="bold">Add file</button>
+      <div className="chat-footer">
+        <div className="symbol" style={{"borderRight":"0.1px solid grey","paddingRight":"1rem","paddingLeft":".5rem"}}>&#43;</div>
+        <div className="symbol">&#128512;</div>
+        <div className="symbol">&#64;</div>
+
       </div>
     </div>
   );
