@@ -189,3 +189,10 @@ body {
 .hide {
   opacity: 0 !important;
 }
+
+.bold{
+  background-color: rgb(37,50,55);
+  color: white;
+  margin: .5rem;
+  padding: .3rem;
+}

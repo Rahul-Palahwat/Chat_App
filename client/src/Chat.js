@@ -78,6 +78,11 @@ function Chat({ socket, username, room }) {
         />
         <button onClick={sendMessage}>&#9658;</button>
       </div>
+      <div>
+        <button className="bold">Bold</button>
+        <button className="bold">Italic</button>
+        <button className="bold">Add file</button>
+      </div>
     </div>
   );
 }
